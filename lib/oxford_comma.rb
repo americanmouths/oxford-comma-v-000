@@ -4,7 +4,10 @@ if (array.count == 1)
 elsif (array.count == 2)
   return array.join(" and ")
 elsif (array.count >= 3 )
-  return array.split(",").join("and")
+  i = array.index {|el| el =~ /\d{2}/ }
+  array[0..i-1].join(", ")
+  array[i].join(" and ")
+  return array
 else
   return array
 end
