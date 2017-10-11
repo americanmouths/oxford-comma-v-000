@@ -4,7 +4,7 @@ if (array.count == 1)
 elsif (array.count == 2)
   return array.join(" and ")
 elsif (array.count >= 3 )
-  return array.to_sentence
+  return array.to_sentence(last_word_connector: ' and ')
 else
   return array
 end
