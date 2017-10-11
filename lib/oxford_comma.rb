@@ -8,3 +8,4 @@ elsif (array.count >= 3 )
 else
   return array
 end
+end
